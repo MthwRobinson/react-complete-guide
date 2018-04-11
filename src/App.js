@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
+
 class App extends Component {
   state = {
     persons: [
@@ -59,7 +60,7 @@ class App extends Component {
 
     if (this.state.showPersons){
       style.backgroundColor = 'red';
-
+      
       persons = (
         <div>
           {this.state.persons.map((person, index) => {
